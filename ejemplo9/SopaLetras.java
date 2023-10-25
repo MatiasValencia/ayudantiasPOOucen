@@ -39,8 +39,8 @@ public class SopaLetras {
     }
     public void encontrarPalabra(String palabra) {
         for (int i = 0; i < filas; i++) {
-            for (int j = 0; j < columnas; j++) {
-                char letra = palabra.charAt(j);
+            for (int j = 0; j < columnas; j++) { // Recorre las letras de la columna.
+                char letra = palabra.charAt(j);  // Indica la posicion de la letra palabra.
                 if (j == letra) {
                     System.out.print(sopa[i][j]);
                 } else {
