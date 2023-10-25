@@ -10,5 +10,7 @@ public class ejemplo {
                         {'U', 'N', 'Q', 'Z', 'D', 'F'},
                         {'V', 'S', 'H', 'O', 'L', 'A'}
                     });
+        sopa.imprimirSopa();
+        sopa.encontrarPalabra("HOLA");
     }
 }
