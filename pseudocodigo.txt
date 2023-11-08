@@ -1,0 +1,35 @@
+class EncriptacionCesar {
+    private int clave;
+    public EncriptacionCesar(int clave) {
+        this.clave = clave;
+    }
+
+    public String encriptar(String texto) {
+        String textoEncriptado = "";
+        String[] asciiMayus = new String[] {"A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"};
+        String[] asciiMinus = new String[] {"a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"};
+        letrasTexto = textoEncriptado.length();
+        int clave = 5;
+
+        for(int i = 0;i < letrasTexto;i++) {
+            letra = textoEncriptado.charAt(i);
+            if (letra.isUpperCase()) {
+                for(int j = 0;j < asciiMayus[];j++) {
+                    if (letra == asciiMayus[j]) {
+                        letra = asciiMayus[j + clave];
+                    }
+                }
+            }
+            if (letra.isLowerCase()) {
+                for(int j = 0;j < asciiMinus[];j++) {
+                    if (letra == asciiMinus[j]) {
+                        letra = asciiMinus[j + clave];
+                    }
+                }
+            }
+            if (letra == " ") {
+                return letra;
+            }
+        }
+    }
+}
